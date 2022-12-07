@@ -46,7 +46,7 @@ def ss(update: Update, context: CallbackContext) -> None:
     print(name)
     print(ss)
 
-#百度网盘连接生成功能
+#百度网盘连接生成功能，需要填百度网盘的BDUSS，STOKEN，Cookie
 def duxiu(ss):
     session = requests.session()
     # BDUSS和STOKEN的值从cookies种获取
