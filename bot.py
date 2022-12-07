@@ -9,11 +9,11 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 import requests
 #tg机器人id
-bot_api = "5802322198:AAH2DlXhOre4UJSWZY-eRPDcswzx_niNVeQ"
+bot_api = "58023:AAH2DlZY-eRswzx_niNVeQ"
 import pymysql  #连接数据库
 connect = pymysql.connect(host='127.0.0.1',   # 本地数据库
                           user='duxiu',
-                          password='KNFxyTkA3P5Zf7bM',
+                          password='KNFP5Zf7bM',
                           db='duxiu',
                           charset='utf8') #服务器名,账户,密码，数据库名称
 db = connect.cursor()
@@ -50,9 +50,8 @@ def ss(update: Update, context: CallbackContext) -> None:
 def duxiu(ss):
     session = requests.session()
     # BDUSS和STOKEN的值从cookies种获取
-    session.cookies["BDUSS"] = 'G2hIMmNTTHRVM283WTNmajFmMHl6dGZ1ZjI0d1ZNTGp1cE53bk11VTFENzEtN1pqSVFBQUFBJCQAAAAAAAAAAAEAAABnIZbCxa61xLeic3VubnkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPVuj2P1bo9jY'
-    session.cookies["STOKEN"] = '12da7949ba2a7831c716bb1694768708a5cb2ae184b3c360ff7de3849923a4e5'
-    url = 'https://pan.baidu.com/share/set?channel=chunlei&clienttype=0&web=1&channel=chunlei&web=1&app_id=250528&bdstoken=9658ea9049d6449c544d60f33f281a97&logid=QzBCQUFGQTc4QTc5M0JGQzU4REI1QjBFQkQ0MkE4Qzg6U0w9MDpOUj0xMDpGRz0x&clienttype=0'
+    session.cookies["BDUSS"] = 'G2hIMmNTTHRVM283WTNmajFmMHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPVuj2P1bo9jY'
+    session.cookies["STOKEN"] = '12da7949ba2a7EI1QjBFQkQ0MkE4Qzg6U0w9MDpOUj0xMDpGRz0x&clienttype=0'
 
     headerss = {
                             'Host': 'pan.baidu.com',
@@ -78,7 +77,7 @@ def duxiu(ss):
     "Connection":"keep-alive" ,
     "Content-Length":"16930" ,
     "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8" ,
-    "Cookie":"newlogin=1; BAIDUID=B497786A20EB47C0688080070C95EF42:FG=1; BAIDUID_BFESS=B497786A20EB47C0688080070C95EF42:FG=1; BDUSS=GhHLVYwemR-SXczWjlpQ3pCU3B4cnR6OXctVjRmMlZHWll-LXF4LVE3dTV-N1pqSVFBQUFBJCQAAAAAAAAAAAEAAABnIZbCxa61xLeic3VubnkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALlyj2O5co9jR; BDUSS_BFESS=GhHLVYwemR-SXczWjlpQ3pCU3B4cnR6OXctVjRmMlZHWll-LXF4LVE3dTV-N1pqSVFBQUFBJCQAAAAAAAAAAAEAAABnIZbCxa61xLeic3VubnkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALlyj2O5co9jR; ab_sr=1.0.1_MTU2ODJmYmQzYzcwODI4MmM3ZTc5YTE2OTNlNjBjZGRkZDY2ODE3ZWEyMmQyY2Q3MDhkNDg2ZjQxODZkMTJkNjU1ZWYxZjM2NGI0MmUyOTE3YTcxM2EwYTgyNWEwOWRjYTMyZTEzZTc1NTMxZTA4ZjgzNjNlMTliNWEzMjRkZTdmMzEzYmE2MmQ5Mjk4YWRlNmNjOTEwNjg4Y2Q3NGNiMQ==" ,
+    "Cookie":"newlogin=1; BAIDUID=80070C95EF42:FG=1; BDUSS=GhHLlyj2O5co9jR; BDUSS_BFESS=GhHLVYwemRLlyj2O5co9jR; ab_sr=1.0.1_MTU2ODJmYmQzYzcwODI4MmM3ZTc5YTE2OTNlNjBjZGRkZDY2ODE3ZWEyMmQyY2Q3MDhkNDg2ZjQxODZkMTJkNjU1ZWYxZjM2NGI0MmUyOTE3YTcxM2EwYTgyNWEwOWRjYTMyZTEzZTc1NTMxZTA4ZjgzNjNlMTliNWEzMjRkZTdmMzEzYmE2MmQ5Mjk4YWRlNmNjOTEwNjg4Y2Q3NGNiMQ==" ,
     "Host":"pan.baidu.com" ,
     "Origin":"https://pan.baidu.com" ,
     "Pragma":"no-cache" ,
