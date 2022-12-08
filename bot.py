@@ -29,7 +29,7 @@ def ss(update: Update, context: CallbackContext) -> None:
     content = '^[0-9]{8}$'
     result = re.findall(content, str(name))
     if len(result) != 0:
-        sql = "SELECT * FROM FileObject WHERE name LIKE '%" + name + "%';"
+        sql = "SELECT * FROM FileObject WHERE name LIKE '%" + str(name) + "%';"
         db.execute(sql)
         result = db.fetchall()
         if len(result) !=0:
