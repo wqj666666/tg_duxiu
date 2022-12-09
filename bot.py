@@ -38,6 +38,9 @@ def ss(update: Update, context: CallbackContext) -> None:
             update.message.reply_text(ss)
         else:
             update.message.reply_text("数据库没有该书集")
+        # 关闭数据库连接
+        db.close()
+        connect.close()
 
     else:
         update.message.reply_text("输入的读秀SS格式错误")
