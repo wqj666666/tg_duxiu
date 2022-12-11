@@ -1,10 +1,4 @@
-import telebot
-from typing import NoReturn
-from time import sleep
-from asyncio import sleep
-import requests
 import re
-import pymysql,telegram
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 import requests
